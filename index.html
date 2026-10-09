@@ -1,110 +1,229 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Portfolio Alvian Nur Isra - Frontend Developer yang berfokus pada website modern, responsif, dan user-friendly.">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="author" content="Alvian Nur Isra">
+    <meta
+        name="description"
+        content="Portfolio of Alvian Nur Isra — Software Developer focused on clean, responsive and modern websites."
+    >
 
-    <meta name="theme-color" content="#0a0a0a">
+    <meta
+        name="author"
+        content="Alvian Nur Isra"
+    >
 
-    <title>Alvian Nur Isra — Frontend Developer</title>
+    <title>Alvian Nur Isra — Software Developer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- =====================================================
+         NAVBAR
+         ===================================================== -->
+
     <header class="navbar">
+
         <div class="nav-container">
 
-            <a href="#home" class="logo">
+            <a
+                href="#home"
+                class="logo"
+            >
                 Alvian<span>.</span>
             </a>
 
-            <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+            <nav
+                class="nav-menu"
+                id="navMenu"
+            >
+
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="#skills"
+                    class="nav-link"
+                >
+                    Skills
+                </a>
+
+                <a
+                    href="#projects"
+                    class="nav-link"
+                >
+                    Projects
+                </a>
+
+                <a
+                    href="#education"
+                    class="nav-link"
+                >
+                    Education
+                </a>
+
+                <a
+                    href="#certificates"
+                    class="nav-link"
+                >
+                    Certificates
+                </a>
+
+                <a
+                    href="#contact"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
+            </nav>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+            >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <nav class="nav-menu" id="navMenu">
-
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#education" class="nav-link">Education</a>
-                <a href="#certificates" class="nav-link">Certificates</a>
-                <a href="#contact" class="nav-link">Contact</a>
-
-            </nav>
-
         </div>
+
     </header>
 
 
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
     <main>
 
-        <!-- ================= HERO ================= -->
-        <section class="hero section" id="home">
+        <section
+            class="hero"
+            id="home"
+        >
 
             <div class="hero-grid"></div>
+
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
 
             <div class="container hero-container">
 
                 <div class="hero-content reveal">
 
-                    <div class="hero-badge">
-                        <span class="status-dot"></span>
+                    <div class="availability">
+
+                        <span class="availability-dot"></span>
+
                         Available for opportunities
+
                     </div>
 
-                    <p class="hero-label">
-                        FRONTEND DEVELOPER
+                    <p class="hero-kicker">
+                        SOFTWARE DEVELOPER
                     </p>
 
                     <h1>
-                        Building clean,
-                        <span>responsive</span>
-                        & modern websites.
+                        Building
+                        <span>clean,</span>
+                        responsive & modern
+                        websites.
                     </h1>
 
                     <p class="hero-description">
-                        Saya Alvian Nur Isra, seorang pengembang perangkat lunak
-                        yang memiliki ketertarikan pada pengembangan website,
-                        khususnya membangun tampilan yang modern, responsif,
-                        dan mudah digunakan.
+
+                        Saya Alvian Nur Isra, seorang pengembang perangkat
+                        lunak yang memiliki ketertarikan pada pengembangan
+                        website dengan tampilan modern, responsive,
+                        terstruktur, dan mudah digunakan.
+
                     </p>
 
-                    <div class="hero-actions">
+                    <div class="hero-buttons">
 
-                        <a href="#projects" class="btn btn-primary">
-                            View My Projects
-                            <span>↗</span>
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            Explore Projects
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
 
-                        <a href="#contact" class="btn btn-secondary">
+                        <a
+                            href="#contact"
+                            class="btn btn-outline"
+                        >
                             Contact Me
+                        </a>
+
+                        <a
+                            href="documents/cv-alvian-nur-isra.pdf"
+                            class="btn btn-cv"
+                            target="_blank"
+                            rel="noopener"
+                        >
+                            Download CV
+
+                            <i class="fa-solid fa-download"></i>
                         </a>
 
                     </div>
 
-                    <div class="hero-social">
+                    <div class="hero-contact">
 
-                        <a href="https://github.com/alviannurisra"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            GitHub ↗
-                        </a>
+                        <span class="line"></span>
 
                         <a href="mailto:alviannurisra12@gmail.com">
-                            Email ↗
+                            alviannurisra12@gmail.com
                         </a>
 
                     </div>
@@ -112,120 +231,227 @@
                 </div>
 
 
-                <div class="hero-visual reveal">
+                <!-- HERO PROFILE -->
+
+                <div class="hero-profile reveal">
+
+                    <div class="profile-glow"></div>
 
                     <div class="profile-card">
 
-                        <div class="profile-card-top">
-                            <span>PORTFOLIO</span>
-                            <span>2026</span>
+                        <div class="profile-header">
+
+                            <span>
+                                ALVIAN NUR ISRA
+                            </span>
+
+                            <span>
+                                SOFTWARE DEVELOPER
+                            </span>
+
                         </div>
 
-                        <div class="profile-image-wrapper">
+                        <div class="profile-photo">
 
                             <img
                                 src="assets/images/profile.jpg"
-                                alt="Foto profil Alvian Nur Isra"
-                                class="profile-image"
+                                alt="Alvian Nur Isra"
                             >
 
+                            <div class="photo-shade"></div>
+
+                            <div class="photo-label">
+
+                                <span>
+                                    Alvian Nur Isra
+                                </span>
+
+                                <small>
+                                    Software Developer
+                                </small>
+
+                            </div>
+
                         </div>
 
-                        <div class="profile-card-bottom">
+                        <div class="profile-footer">
 
                             <div>
-                                <strong>Alvian Nur Isra</strong>
-                                <span>Software Development</span>
+
+                                <span>
+                                    FOCUS
+                                </span>
+
+                                <strong>
+                                    Web Development
+                                </strong>
+
                             </div>
 
-                            <div class="profile-number">
-                                01
+                            <div>
+
+                                <span>
+                                    BASED IN
+                                </span>
+
+                                <strong>
+                                    Indonesia
+                                </strong>
+
                             </div>
 
                         </div>
 
                     </div>
 
-                    <div class="floating-card floating-card-one">
-                        <span>HTML</span>
-                        <strong>01</strong>
+
+                    <div class="floating floating-html">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <strong>
+                            HTML
+                        </strong>
+
                     </div>
 
-                    <div class="floating-card floating-card-two">
-                        <span>CSS</span>
-                        <strong>02</strong>
+
+                    <div class="floating floating-css">
+
+                        <small>
+                            TECHNOLOGY
+                        </small>
+
+                        <strong>
+                            CSS
+                        </strong>
+
                     </div>
 
                 </div>
 
             </div>
 
+
+            <div class="scroll-indicator">
+
+                <span></span>
+
+                SCROLL TO EXPLORE
+
+            </div>
+
         </section>
 
 
-        <!-- ================= ABOUT ================= -->
-        <section class="section about-section" id="about">
+        <!-- =====================================================
+             ABOUT
+             ===================================================== -->
+
+        <section
+            class="section about-section"
+            id="about"
+        >
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-title reveal">
 
-                    <p class="section-number">01 — ABOUT</p>
+                    <span>
+                        01 — ABOUT
+                    </span>
 
                     <h2>
                         Designing with purpose,
-                        <span>building with code.</span>
+                        <em>building with code.</em>
                     </h2>
 
                 </div>
 
 
-                <div class="about-grid">
+                <div class="about-layout">
 
-                    <div class="about-main reveal">
+                    <div class="about-text reveal">
 
-                        <p class="large-text">
-                            Saya memiliki ketertarikan pada dunia pengembangan
-                            perangkat lunak dan pengembangan website.
+                        <p class="about-lead">
+
+                            Saya percaya sebuah website yang baik bukan
+                            hanya tentang tampilan, tetapi juga tentang
+                            bagaimana website tersebut bekerja.
+
                         </p>
 
                         <p>
+
                             Saya terbiasa mempelajari teknologi web melalui
-                            pembuatan project secara langsung. Fokus saya adalah
-                            menghasilkan website yang memiliki tampilan bersih,
-                            responsif, terstruktur, dan dapat digunakan dengan baik
-                            pada berbagai perangkat.
+                            pembuatan project secara langsung. Fokus saya
+                            adalah membuat website dengan struktur yang rapi,
+                            responsive, dan nyaman digunakan.
+
                         </p>
 
                         <p>
-                            Selain pengembangan frontend, saya juga memiliki
-                            pengalaman mengembangkan aplikasi berbasis PHP dan
-                            MySQL untuk kebutuhan pengelolaan data serta transaksi.
+
+                            Saya juga memiliki pengalaman mengembangkan
+                            aplikasi berbasis PHP dan MySQL untuk pengelolaan
+                            data, transaksi, pelanggan, stok, dan sistem
+                            informasi.
+
                         </p>
 
                     </div>
 
 
-                    <div class="about-details reveal">
+                    <div class="about-info reveal">
 
-                        <div class="detail-item">
-                            <span>Nama</span>
-                            <strong>Alvian Nur Isra</strong>
+                        <div class="info-row">
+
+                            <span>
+                                NAME
+                            </span>
+
+                            <strong>
+                                Alvian Nur Isra
+                            </strong>
+
                         </div>
 
-                        <div class="detail-item">
-                            <span>Fokus</span>
-                            <strong>Web Development</strong>
+                        <div class="info-row">
+
+                            <span>
+                                ROLE
+                            </span>
+
+                            <strong>
+                                Software Developer
+                            </strong>
+
                         </div>
 
-                        <div class="detail-item">
-                            <span>Prodi</span>
-                            <strong>Rekayasa Perangkat Lunak</strong>
+                        <div class="info-row">
+
+                            <span>
+                                FOCUS
+                            </span>
+
+                            <strong>
+                                Web Development
+                            </strong>
+
                         </div>
 
-                        <div class="detail-item">
-                            <span>Lokasi</span>
-                            <strong>Indonesia</strong>
+                        <div class="info-row">
+
+                            <span>
+                                LOCATION
+                            </span>
+
+                            <strong>
+                                Indonesia
+                            </strong>
+
                         </div>
 
                     </div>
@@ -237,18 +463,26 @@
         </section>
 
 
-        <!-- ================= SKILLS ================= -->
-        <section class="section skills-section" id="skills">
+        <!-- =====================================================
+             SKILLS
+             ===================================================== -->
+
+        <section
+            class="section skills-section"
+            id="skills"
+        >
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-title reveal">
 
-                    <p class="section-number">02 — SKILLS</p>
+                    <span>
+                        02 — SKILLS
+                    </span>
 
                     <h2>
-                        Tools I use to
-                        <span>bring ideas to life.</span>
+                        Tools I use to bring
+                        <em>ideas to life.</em>
                     </h2>
 
                 </div>
@@ -256,76 +490,117 @@
 
                 <div class="skills-grid">
 
-                    <div class="skill-card reveal">
 
-                        <div class="skill-number">01</div>
+                    <!-- HTML -->
 
-                        <div class="skill-icon">
-                            &lt;/&gt;
-                        </div>
+                    <article class="skill-card reveal">
 
-                        <h3>HTML5</h3>
-
-                        <p>
-                            Semantic markup dan struktur website
-                            yang terorganisir.
-                        </p>
-
-                    </div>
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-number">02</div>
+                        <span class="skill-number">
+                            01
+                        </span>
 
                         <div class="skill-icon">
-                            #
+                            HTML5
                         </div>
 
-                        <h3>CSS3</h3>
+                        <h3>
+                            HTML5
+                        </h3>
 
                         <p>
-                            Responsive layout, styling, animation,
-                            dan modern UI.
+                            Membuat struktur website yang semantic,
+                            terorganisir, dan mudah dikembangkan.
                         </p>
 
-                    </div>
+                        <div class="skill-progress">
+                            <span></span>
+                        </div>
+
+                    </article>
 
 
-                    <div class="skill-card reveal">
+                    <!-- CSS -->
 
-                        <div class="skill-number">03</div>
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            02
+                        </span>
+
+                        <div class="skill-icon">
+                            CSS3
+                        </div>
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                        <p>
+                            Membuat tampilan website yang modern,
+                            responsive, dan nyaman digunakan.
+                        </p>
+
+                        <div class="skill-progress">
+                            <span></span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- JAVASCRIPT -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            03
+                        </span>
 
                         <div class="skill-icon">
                             JS
                         </div>
 
-                        <h3>JavaScript</h3>
+                        <h3>
+                            JavaScript
+                        </h3>
 
                         <p>
-                            Membuat website lebih interaktif
-                            dan dinamis.
+                            Menambahkan interaksi dan behaviour
+                            agar website terasa lebih dinamis.
                         </p>
 
-                    </div>
-
-
-                    <div class="skill-card reveal">
-
-                        <div class="skill-number">04</div>
-
-                        <div class="skill-icon">
-                            Git
+                        <div class="skill-progress">
+                            <span></span>
                         </div>
 
-                        <h3>Git & GitHub</h3>
+                    </article>
+
+
+                    <!-- GIT -->
+
+                    <article class="skill-card reveal">
+
+                        <span class="skill-number">
+                            04
+                        </span>
+
+                        <div class="skill-icon">
+                            GIT
+                        </div>
+
+                        <h3>
+                            Git
+                        </h3>
 
                         <p>
-                            Version control dan pengelolaan
-                            project menggunakan Git.
+                            Mengelola perubahan kode dan menjaga
+                            project tetap terorganisir.
                         </p>
 
-                    </div>
+                        <div class="skill-progress">
+                            <span></span>
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -334,28 +609,36 @@
         </section>
 
 
-        <!-- ================= PROJECTS ================= -->
-        <section class="section projects-section" id="projects">
+        <!-- =====================================================
+             PROJECTS
+             ===================================================== -->
+
+        <section
+            class="section projects-section"
+            id="projects"
+        >
 
             <div class="container">
 
-                <div class="section-heading projects-heading reveal">
+                <div class="section-title projects-title reveal">
 
                     <div>
 
-                        <p class="section-number">03 — PROJECTS</p>
+                        <span>
+                            03 — PROJECTS
+                        </span>
 
                         <h2>
-                            Selected work &
-                            <span>projects.</span>
+                            Selected work
+                            <em>& projects.</em>
                         </h2>
 
                     </div>
 
-                    <p class="section-intro">
-                        Beberapa project yang saya kembangkan
-                        selama proses pembelajaran dan pengembangan
-                        aplikasi berbasis web.
+                    <p>
+                        Beberapa project yang saya kembangkan untuk
+                        menerapkan kemampuan web development secara
+                        langsung.
                     </p>
 
                 </div>
@@ -363,33 +646,35 @@
 
                 <div class="projects-grid">
 
+
                     <!-- PROJECT 1 -->
+
                     <article class="project-card reveal">
 
                         <div class="project-image">
 
                             <img
                                 src="assets/images/project-1.jpg"
-                                alt="Screenshot Sistem Pembayaran Listrik"
+                                alt="Sistem Pembayaran Listrik"
                             >
 
-                            <div class="project-overlay">
-                                <span>WEB APPLICATION</span>
-                            </div>
+                            <span class="project-tag">
+                                WEB APPLICATION
+                            </span>
 
                         </div>
 
 
-                        <div class="project-content">
+                        <div class="project-body">
 
-                            <div class="project-top">
+                            <div class="project-meta">
 
-                                <span class="project-index">
-                                    01 / 02
+                                <span>
+                                    PROJECT 01
                                 </span>
 
-                                <span class="project-type">
-                                    PHP • MYSQL
+                                <span>
+                                    PHP / MYSQL
                                 </span>
 
                             </div>
@@ -399,65 +684,83 @@
                             </h3>
 
                             <p>
+
                                 Aplikasi berbasis web untuk mengelola
                                 pelanggan, penggunaan listrik, tagihan,
-                                pembayaran, dan dashboard administrasi.
+                                pembayaran, dan data transaksi secara
+                                terstruktur.
+
                             </p>
 
 
-                            <div class="tech-list">
+                            <div class="technology-list">
 
-                                <span>PHP Native</span>
-                                <span>MySQL</span>
-                                <span>Bootstrap 5</span>
-                                <span>JavaScript</span>
+                                <span>
+                                    PHP Native
+                                </span>
+
+                                <span>
+                                    MySQL
+                                </span>
+
+                                <span>
+                                    Bootstrap 5
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                                <span>
+                                    XAMPP
+                                </span>
 
                             </div>
 
 
-                            <div class="project-features">
+                            <div class="feature-list">
 
-                                <div>
-                                    <span>✓</span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
                                     Authentication
-                                </div>
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
                                     Customer Management
-                                </div>
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
-                                    Billing & Payment
-                                </div>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Electricity Usage
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Payment Management
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Dashboard
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
                                     Responsive UI
-                                </div>
+                                </span>
 
                             </div>
 
 
-                            <div class="project-links">
+                            <a
+                                href="#contact"
+                                class="project-action"
+                            >
+                                Discuss Project
 
-                                <a href="#contact" class="project-link">
-                                    Discuss Project
-                                    <span>↗</span>
-                                </a>
-
-                                <a
-                                    href="https://github.com/alviannurisra"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-link secondary-link"
-                                >
-                                    GitHub Profile
-                                    <span>↗</span>
-                                </a>
-
-                            </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
 
                         </div>
 
@@ -465,32 +768,33 @@
 
 
                     <!-- PROJECT 2 -->
+
                     <article class="project-card reveal">
 
                         <div class="project-image">
 
                             <img
                                 src="assets/images/project-2.jpg"
-                                alt="Screenshot Sale of Goods"
+                                alt="Sale of Goods"
                             >
 
-                            <div class="project-overlay">
-                                <span>SALES MANAGEMENT</span>
-                            </div>
+                            <span class="project-tag">
+                                SALES MANAGEMENT
+                            </span>
 
                         </div>
 
 
-                        <div class="project-content">
+                        <div class="project-body">
 
-                            <div class="project-top">
+                            <div class="project-meta">
 
-                                <span class="project-index">
-                                    02 / 02
+                                <span>
+                                    PROJECT 02
                                 </span>
 
-                                <span class="project-type">
-                                    PHP • MYSQL
+                                <span>
+                                    PHP / MYSQL
                                 </span>
 
                             </div>
@@ -500,65 +804,87 @@
                             </h3>
 
                             <p>
+
                                 Sistem manajemen penjualan berbasis web
                                 untuk mengelola produk, pelanggan, stok,
-                                transaksi penjualan, dan laporan.
+                                transaksi penjualan, keranjang, dan
+                                laporan.
+
                             </p>
 
 
-                            <div class="tech-list">
+                            <div class="technology-list">
 
-                                <span>PHP Native</span>
-                                <span>MySQLi</span>
-                                <span>Bootstrap</span>
-                                <span>JavaScript</span>
+                                <span>
+                                    PHP Native
+                                </span>
+
+                                <span>
+                                    MySQLi
+                                </span>
+
+                                <span>
+                                    HTML5
+                                </span>
+
+                                <span>
+                                    CSS3
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                                <span>
+                                    Bootstrap
+                                </span>
 
                             </div>
 
 
-                            <div class="project-features">
+                            <div class="feature-list">
 
-                                <div>
-                                    <span>✓</span>
-                                    Product Management
-                                </div>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Authentication
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Product CRUD
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Customer CRUD
+                                </span>
+
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
                                     Stock Management
-                                </div>
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
-                                    Sales Transaction
-                                </div>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
+                                    Shopping Cart
+                                </span>
 
-                                <div>
-                                    <span>✓</span>
+                                <span>
+                                    <i class="fa-solid fa-check"></i>
                                     Excel Export
-                                </div>
+                                </span>
 
                             </div>
 
 
-                            <div class="project-links">
+                            <a
+                                href="#contact"
+                                class="project-action"
+                            >
+                                Discuss Project
 
-                                <a href="#contact" class="project-link">
-                                    Discuss Project
-                                    <span>↗</span>
-                                </a>
-
-                                <a
-                                    href="https://github.com/alviannurisra"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-link secondary-link"
-                                >
-                                    GitHub Profile
-                                    <span>↗</span>
-                                </a>
-
-                            </div>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
 
                         </div>
 
@@ -571,18 +897,26 @@
         </section>
 
 
-        <!-- ================= EDUCATION ================= -->
-        <section class="section education-section" id="education">
+        <!-- =====================================================
+             EDUCATION
+             ===================================================== -->
+
+        <section
+            class="section education-section"
+            id="education"
+        >
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-title reveal">
 
-                    <p class="section-number">04 — EDUCATION</p>
+                    <span>
+                        04 — EDUCATION
+                    </span>
 
                     <h2>
-                        Academic
-                        <span>background.</span>
+                        Learning,
+                        <em>building, improving.</em>
                     </h2>
 
                 </div>
@@ -591,27 +925,30 @@
                 <div class="education-card reveal">
 
                     <div class="education-year">
-                        2022 — Present
+                        EDUCATION
                     </div>
 
-                    <div class="education-info">
+                    <div class="education-content">
 
-                        <p class="education-label">
-                            UNIVERSITY
-                        </p>
+                        <span>
+                            UNIVERSITAS BINA SARANA INFORMATIKA
+                        </span>
 
                         <h3>
-                            Universitas Bina Sarana Informatika
+                            Rekayasa Perangkat Lunak
                         </h3>
 
                         <p>
-                            Rekayasa Perangkat Lunak
+                            Fokus pada pengembangan perangkat lunak
+                            dan teknologi aplikasi berbasis web.
                         </p>
 
                     </div>
 
                     <div class="education-arrow">
-                        ↗
+
+                        <i class="fa-solid fa-arrow-up-right"></i>
+
                     </div>
 
                 </div>
@@ -621,18 +958,26 @@
         </section>
 
 
-        <!-- ================= CERTIFICATES ================= -->
-        <section class="section certificates-section" id="certificates">
+        <!-- =====================================================
+             MAIN CERTIFICATES
+             ===================================================== -->
+
+        <section
+            class="section certificates-section"
+            id="certificates"
+        >
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-title reveal">
 
-                    <p class="section-number">05 — CERTIFICATES</p>
+                    <span>
+                        05 — CERTIFICATES
+                    </span>
 
                     <h2>
-                        Certifications &
-                        <span>achievements.</span>
+                        Certifications that support
+                        <em>my skills.</em>
                     </h2>
 
                 </div>
@@ -640,22 +985,23 @@
 
                 <div class="certificates-grid">
 
+
                     <!-- CERTIFICATE 1 -->
+
                     <article class="certificate-card reveal">
 
-                        <div class="certificate-icon">
-                            PDF
+                        <div class="certificate-number">
+                            01
                         </div>
 
-                        <div class="certificate-info">
+                        <div class="certificate-content">
 
-                            <span class="certificate-label">
-                                SERTIFIKAT KOMPETENSI
+                            <span>
+                                CERTIFICATE OF COMPETENCY
                             </span>
 
                             <h3>
-                                Pengembang Perangkat Lunak /
-                                Analis Program
+                                Sertifikat Kompetensi
                             </h3>
 
                             <p>
@@ -667,32 +1013,32 @@
                         <a
                             href="assets/certificates/certificate-1.pdf"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            class="certificate-link"
+                            rel="noopener"
+                            class="certificate-action"
                         >
-                            Lihat Sertifikat
-                            <span>↗</span>
+                            View PDF
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
 
                     </article>
 
 
                     <!-- CERTIFICATE 2 -->
+
                     <article class="certificate-card reveal">
 
-                        <div class="certificate-icon">
-                            PDF
+                        <div class="certificate-number">
+                            02
                         </div>
 
-                        <div class="certificate-info">
+                        <div class="certificate-content">
 
-                            <span class="certificate-label">
-                                PROGRAMMING
+                            <span>
+                                PYTHON CERTIFICATION
                             </span>
 
                             <h3>
-                                PCAP: Programming Essentials
-                                in Python
+                                PCAP: Programming Essentials in Python
                             </h3>
 
                             <p>
@@ -704,11 +1050,11 @@
                         <a
                             href="assets/certificates/certificate-2.pdf"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            class="certificate-link"
+                            rel="noopener"
+                            class="certificate-action"
                         >
-                            Lihat Sertifikat
-                            <span>↗</span>
+                            View PDF
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
 
                     </article>
@@ -720,27 +1066,192 @@
         </section>
 
 
-        <!-- ================= CONTACT ================= -->
-        <section class="section contact-section" id="contact">
+        <!-- =====================================================
+             WEBINAR CERTIFICATES
+             ===================================================== -->
+
+        <section
+            class="section webinar-section"
+            id="webinar-certificates"
+        >
 
             <div class="container">
 
-                <div class="contact-header reveal">
+                <div class="section-title reveal">
 
-                    <p class="section-number">
-                        06 — CONTACT
-                    </p>
+                    <span>
+                        06 — WEBINAR CERTIFICATES
+                    </span>
+
+                    <h2>
+                        Learning beyond
+                        <em>the classroom.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="webinar-grid">
+
+
+                    <!-- WEBINAR 1 -->
+
+                    <article class="webinar-card reveal">
+
+                        <div class="webinar-number">
+                            01
+                        </div>
+
+                        <div class="webinar-content">
+
+                            <span>
+                                WEBINAR CERTIFICATE
+                            </span>
+
+                            <h3>
+                                Getting Closer With Machine Learning
+                            </h3>
+
+                            <p>
+                                Webinar Pekan IT 2022
+                            </p>
+
+                            <small>
+                                09 October 2022
+                            </small>
+
+                        </div>
+
+                        <a
+                            href="assets/certificates/webinar-1.pdf"
+                            target="_blank"
+                            rel="noopener"
+                            class="webinar-action"
+                        >
+                            View PDF
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- WEBINAR 2 -->
+
+                    <article class="webinar-card reveal">
+
+                        <div class="webinar-number">
+                            02
+                        </div>
+
+                        <div class="webinar-content">
+
+                            <span>
+                                WEBINAR CERTIFICATE
+                            </span>
+
+                            <h3>
+                                Software Architecture 101
+                            </h3>
+
+                            <p>
+                                IDCamp × Dicoding LIVE
+                            </p>
+
+                            <small>
+                                24 September 2022
+                            </small>
+
+                        </div>
+
+                        <a
+                            href="assets/certificates/webinar-2.pdf"
+                            target="_blank"
+                            rel="noopener"
+                            class="webinar-action"
+                        >
+                            View PDF
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+
+                    <!-- WEBINAR 3 -->
+
+                    <article class="webinar-card reveal">
+
+                        <div class="webinar-number">
+                            03
+                        </div>
+
+                        <div class="webinar-content">
+
+                            <span>
+                                WEBINAR CERTIFICATE
+                            </span>
+
+                            <h3>
+                                Webinar Literasi Digital #Edukasi4ID
+                            </h3>
+
+                            <p>
+                                Kominfo, Siberkreasi & Edukasi4ID
+                            </p>
+
+                            <small>
+                                11 November 2020
+                            </small>
+
+                        </div>
+
+                        <a
+                            href="assets/certificates/webinar-3.pdf"
+                            target="_blank"
+                            rel="noopener"
+                            class="webinar-action"
+                        >
+                            View PDF
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+             ===================================================== -->
+
+        <section
+            class="section contact-section"
+            id="contact"
+        >
+
+            <div class="container">
+
+                <div class="contact-heading reveal">
+
+                    <span>
+                        07 — CONTACT
+                    </span>
 
                     <h2>
                         Let's build something
-                        <span>great together.</span>
+                        <em>useful together.</em>
                     </h2>
 
                     <p>
-                        Jika Anda tertarik untuk berdiskusi mengenai
-                        pekerjaan, project, atau peluang kolaborasi,
-                        silakan hubungi saya melalui salah satu kontak
-                        di bawah ini.
+                        Jika Anda memiliki kesempatan kerja, project,
+                        atau ingin berdiskusi mengenai pengembangan
+                        website, saya terbuka untuk terhubung.
                     </p>
 
                 </div>
@@ -748,7 +1259,9 @@
 
                 <div class="contact-grid">
 
+
                     <!-- EMAIL -->
+
                     <a
                         href="mailto:alviannurisra12@gmail.com"
                         class="contact-card reveal"
@@ -756,30 +1269,15 @@
 
                         <div class="contact-icon">
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                            >
-                                <rect
-                                    x="3"
-                                    y="5"
-                                    width="18"
-                                    height="14"
-                                    rx="2"
-                                />
-
-                                <path
-                                    d="m3 7 9 6 9-6"
-                                />
-                            </svg>
+                            <i class="fa-regular fa-envelope"></i>
 
                         </div>
 
-                        <div class="contact-text">
+                        <div class="contact-information">
 
-                            <span>Email</span>
+                            <span>
+                                EMAIL
+                            </span>
 
                             <strong>
                                 alviannurisra12@gmail.com
@@ -795,82 +1293,28 @@
 
 
                     <!-- WHATSAPP -->
+
                     <a
                         href="https://wa.me/6281388933219"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener"
                         class="contact-card reveal"
                     >
 
                         <div class="contact-icon">
 
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                            >
-                                <path
-                                    d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-4.6A8.5 8.5 0 1 1 20.5 11.5Z"
-                                />
-
-                                <path
-                                    d="M8.5 8.5c.2-.5.5-.6.9-.6h.6c.2 0 .4.1.5.4l.7 1.7c.1.2.1.4-.1.6l-.6.7c.5 1 1.3 1.8 2.3 2.3l.7-.6c.2-.2.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.6c0 .4-.2.7-.6.9-.4.2-1 .2-1.6 0-2.7-.9-4.9-3.1-5.8-5.8-.2-.6-.2-1.2 0-1.6Z"
-                                />
-                            </svg>
+                            <i class="fa-brands fa-whatsapp"></i>
 
                         </div>
 
-                        <div class="contact-text">
+                        <div class="contact-information">
 
-                            <span>WhatsApp</span>
+                            <span>
+                                WHATSAPP
+                            </span>
 
                             <strong>
                                 +62 813-8893-3219
-                            </strong>
-
-                        </div>
-
-                        <span class="contact-arrow">
-                            ↗
-                        </span>
-
-                    </a>
-
-
-                    <!-- GITHUB -->
-                    <a
-                        href="https://github.com/alviannurisra"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-card reveal"
-                    >
-
-                        <div class="contact-icon">
-
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.7"
-                            >
-                                <path
-                                    d="M15 22v-3.5c.1-1.2-.4-2.4-1.3-3.2 4.3-.5 8.8-2.1 8.8-9.2 0-1.8-.7-3.3-1.8-4.5.2-.5.8-2.2-.2-4.5 0 0-1.5-.5-4.8 1.8a16.5 16.5 0 0 0-8.7 0C3.7 1.6 2.2 2.1 2.2 2.1c-1 2.3-.4 4-.2 4.5C.9 6.8.2 8.3.2 10.1c0 7.1 4.5 8.7 8.8 9.2-.9.8-1.4 1.9-1.3 3.2V22"
-                                />
-
-                                <path
-                                    d="M6 18c-1 .5-2.5 0-3.2-1"
-                                />
-                            </svg>
-
-                        </div>
-
-                        <div class="contact-text">
-
-                            <span>GitHub</span>
-
-                            <strong>
-                                github.com/alviannurisra
                             </strong>
 
                         </div>
@@ -890,22 +1334,31 @@
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
     <footer class="footer">
 
         <div class="container footer-container">
 
-            <div class="footer-logo">
+            <a
+                href="#home"
+                class="footer-logo"
+            >
                 Alvian<span>.</span>
-            </div>
+            </a>
 
             <p>
                 © <span id="currentYear"></span>
                 Alvian Nur Isra. All rights reserved.
             </p>
 
-            <a href="#home" class="back-top">
-                Back to top ↑
+            <a
+                href="#home"
+                class="back-top"
+            >
+                BACK TO TOP ↑
             </a>
 
         </div>
@@ -913,6 +1366,7 @@
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
