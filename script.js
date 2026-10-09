@@ -1,12 +1,8 @@
-/* =========================================================
-   ALVIAN NUR ISRA — PORTFOLIO JAVASCRIPT
-   ========================================================= */
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ===============================
+    /* =====================================================
        MOBILE MENU
-    =============================== */
+       ===================================================== */
 
     const menuToggle = document.getElementById("menuToggle");
     const navMenu = document.getElementById("navMenu");
@@ -15,172 +11,216 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menuToggle && navMenu) {
 
         menuToggle.addEventListener("click", () => {
+
             navMenu.classList.toggle("open");
+
         });
+
 
         navLinks.forEach((link) => {
 
             link.addEventListener("click", () => {
+
                 navMenu.classList.remove("open");
+
             });
+
+        });
+
+
+        document.addEventListener("click", (event) => {
+
+            const insideMenu =
+                navMenu.contains(event.target);
+
+            const insideButton =
+                menuToggle.contains(event.target);
+
+            if (
+                !insideMenu &&
+                !insideButton
+            ) {
+
+                navMenu.classList.remove("open");
+
+            }
+
+        });
+
+
+        document.addEventListener("keydown", (event) => {
+
+            if (
+                event.key === "Escape"
+            ) {
+
+                navMenu.classList.remove("open");
+
+            }
 
         });
 
     }
 
 
-    /* ===============================
-       CLOSE MENU WHEN CLICK OUTSIDE
-    =============================== */
-
-    document.addEventListener("click", (event) => {
-
-        if (!navMenu || !menuToggle) {
-            return;
-        }
-
-        const clickedInsideMenu =
-            navMenu.contains(event.target);
-
-        const clickedToggle =
-            menuToggle.contains(event.target);
-
-        if (
-            !clickedInsideMenu &&
-            !clickedToggle
-        ) {
-            navMenu.classList.remove("open");
-        }
-
-    });
-
-
-    /* ===============================
-       CLOSE MENU WITH ESCAPE
-    =============================== */
-
-    document.addEventListener("keydown", (event) => {
-
-        if (event.key === "Escape" && navMenu) {
-            navMenu.classList.remove("open");
-        }
-
-    });
-
-
-    /* ===============================
+    /* =====================================================
        ACTIVE NAVIGATION
-    =============================== */
+       ===================================================== */
 
     const sections =
-        document.querySelectorAll("section[id]");
+        document.querySelectorAll(
+            "section[id]"
+        );
 
-    const updateActiveNavigation = () => {
 
-        const scrollPosition =
+    const updateNavigation = () => {
+
+        const position =
             window.scrollY + 180;
 
-        let currentSection = "";
+        let current = "home";
+
 
         sections.forEach((section) => {
 
-            const sectionTop =
+            const top =
                 section.offsetTop;
 
-            const sectionHeight =
+            const height =
                 section.offsetHeight;
 
+
             if (
-                scrollPosition >= sectionTop &&
-                scrollPosition < sectionTop + sectionHeight
+                position >= top &&
+                position < top + height
             ) {
-                currentSection = section.id;
+
+                current =
+                    section.id;
+
             }
 
         });
+
 
         navLinks.forEach((link) => {
 
             link.classList.remove("active");
 
-            const href =
-                link.getAttribute("href");
 
-            if (href === `#${currentSection}`) {
+            if (
+                link.getAttribute("href") ===
+                `#${current}`
+            ) {
+
                 link.classList.add("active");
+
             }
 
         });
 
     };
 
+
     window.addEventListener(
         "scroll",
-        updateActiveNavigation,
-        { passive: true }
+        updateNavigation,
+        {
+            passive: true
+        }
     );
 
-    updateActiveNavigation();
+
+    updateNavigation();
 
 
-    /* ===============================
+    /* =====================================================
        SCROLL REVEAL
-    =============================== */
+       ===================================================== */
 
-    const revealElements =
-        document.querySelectorAll(".reveal");
+    const elements =
+        document.querySelectorAll(
+            ".reveal"
+        );
 
-    if ("IntersectionObserver" in window) {
 
-        const revealObserver =
+    if (
+        "IntersectionObserver"
+        in window
+    ) {
+
+        const observer =
             new IntersectionObserver(
-                (entries, observer) => {
+                (
+                    entries,
+                    observer
+                ) => {
 
-                    entries.forEach((entry) => {
+                    entries.forEach(
+                        (entry) => {
 
-                        if (entry.isIntersecting) {
+                            if (
+                                entry.isIntersecting
+                            ) {
 
-                            entry.target.classList.add(
-                                "visible"
-                            );
+                                entry.target.classList.add(
+                                    "visible"
+                                );
 
-                            observer.unobserve(
-                                entry.target
-                            );
+                                observer.unobserve(
+                                    entry.target
+                                );
+
+                            }
 
                         }
-
-                    });
+                    );
 
                 },
                 {
-                    threshold: 0.12
+                    threshold: 0.08
                 }
             );
 
-        revealElements.forEach((element) => {
-            revealObserver.observe(element);
-        });
+
+        elements.forEach(
+            (element) => {
+
+                observer.observe(
+                    element
+                );
+
+            }
+        );
 
     } else {
 
-        revealElements.forEach((element) => {
-            element.classList.add("visible");
-        });
+        elements.forEach(
+            (element) => {
+
+                element.classList.add(
+                    "visible"
+                );
+
+            }
+        );
 
     }
 
 
-    /* ===============================
+    /* =====================================================
        CURRENT YEAR
-    =============================== */
+       ===================================================== */
 
-    const currentYear =
-        document.getElementById("currentYear");
+    const year =
+        document.getElementById(
+            "currentYear"
+        );
 
-    if (currentYear) {
 
-        currentYear.textContent =
+    if (year) {
+
+        year.textContent =
             new Date().getFullYear();
 
     }
